@@ -1,8 +1,12 @@
 def encrypt(key,plaintext):
+    
+    print(plaintext)
     ciphertext=""
 
     for char in plaintext:
         ciphertext += chr((ord(char) + key-65) % 26 + 65)
+        
+    print(ciphertext)
 
     return ciphertext
 
